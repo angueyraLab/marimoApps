@@ -163,7 +163,7 @@ def _(PoissonP, np, pd, radio):
     if radio.value == "Hecht":
         FOS = pd.read_csv(str(mo.notebook_location() / "public" / "BoV" / "HSP_FOS_SH.csv"))
     elif radio.value == "Schlaer":
-        FOS = pd.read_csv(str(mo.notebook_location() / "public" / "BoV" / "HSP_FOS_SS.csv")")
+        FOS = pd.read_csv(str(mo.notebook_location() / "public" / "BoV" / "HSP_FOS_SS.csv"))
     elif radio.value == "Pirenne":
         FOS = pd.read_csv(str(mo.notebook_location() / "public" / "BoV" / "HSP_FOS_MHP.csv"))
     elif radio.value == "Rods":
