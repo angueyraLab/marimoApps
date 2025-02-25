@@ -159,15 +159,15 @@ def _(PoissonP, np, pd, radio):
             i = i + 1
 
     if radio.value == "Hecht":
-        FOS = pd.read_csv("./HSP_FOS_SH.csv")
+        FOS = pd.read_csv("./public/BoV/HSP_FOS_SH.csv")
     elif radio.value == "Schlaer":
-        FOS = pd.read_csv("./HSP_FOS_SS.csv")
+        FOS = pd.read_csv("./public/BoV/HSP_FOS_SS.csv")
     elif radio.value == "Pirenne":
-        FOS = pd.read_csv("./HSP_FOS_MHP.csv")
+        FOS = pd.read_csv("./public/BoV/HSP_FOS_MHP.csv")
     elif radio.value == "Rods":
-        FOS = pd.read_csv("./Rod_FOSCombo.csv")
+        FOS = pd.read_csv("./public/BoV/Rod_FOSCombo.csv")
     else:
-        FOS = pd.read_csv("./HSP_FOS_SS.csv")
+        FOS = pd.read_csv("./public/BoV/HSP_FOS_SS.csv")
     return FOS, a, allP, f, i, logScale, n_now, ns, pmf
 
 
